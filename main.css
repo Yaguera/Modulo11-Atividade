@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+header,
+footer {
+    background-color: #973645;
+    padding-top: 16px;
+    color: #f5e9e9b2;
+}
+
+header>.container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    width: 40%;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#sobre {
+    height: 80vh;
+    margin-top: 5%;
+}
+
+#sobre img {
+    width: 40%;
+}
+
+#sobre div {
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-text {
+    margin-left: 10%;
+}
+
+section h2 {
+    color: #234026;
+    font-size: 32px;
+    padding: 8px 0;
+    margin-bottom: 24px;
+    border-bottom: 3px solid #234026;
+}
+
+#sobre-text p {
+    color: #234026;
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+#cardapio {
+    margin-bottom: 10%;
+}
+
+#cardapio img {
+    width: 100%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#cardapio li {
+    text-align: center;
+    list-style: none;
+
+}
+
+.container-grid li h3 {
+    font-size: 24px;
+    color: #973645;
+
+}
+
+.price {
+    margin: 16px 0;
+}
+
+.price strong {
+    font-size: 24px;
+    color: #234026;
+}
+
+.container-grid button {
+    padding: 8px;
+    width: 90%;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: #234026;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.container-grid button:hover {
+    background-color: #973645;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header img {
+        width: 30%;
+    }
+
+    .block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+        display: none;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .container-block {
+        display: block;
+
+    }
+
+    #sobre img {
+        width: 100%;
+    }
+
+    #sobre {
+        margin-bottom: 20%;
+    }
+
+    #sobre-text {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    #sobre {
+        height: 50vh;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    #cardapio {
+        margin-bottom: 50%;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    nav ul li {
+        width: 200px;
+        padding: 0;
+        text-align: right;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jambo Confeitaria</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container-flex container-block">
+            <div class="block">
+                <img src="images/jambo branding (1).png" alt="jambo confeitaria">
+                <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li><a href="#sobre">Sobre a Jambo</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container container-flex container-block">
+            <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+            <div id="sobre-text">
+                <h2>Sobre a Jambo Confeitaria</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reprehenderit fuga totam accusantium ut
+                    at repudiandae. Quo ex quia amet eos pariatur dignissimos deleniti tempore modi, voluptatem sit.
+                    Porro, sapiente.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatibus, fugiat illo magni
+                    quaerat iusto ea inventore magnam autem iste error dolor temporibus id explicabo sed facilis nobis
+                    soluta eaque.</p>
+            </div>
+        </div>
+    </section>
+    <section id="cardapio">
+        <div class="container">
+            <h2>Cardápio</h2>
+            <ul class="container-grid container-block">
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+                <li>
+                    <img src="images/580b57fbd9996e24bc43c0fc.png" alt="cookie">
+                    <h3>Cookie de Chocolate</h3>
+                    <div class="price"><strong>R$ 09,00</strong></div>
+                    <button>Fazer Pedido</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Todos os Direitos Reservados © 2023 | Jambo Confeitaria</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav a').click(function (e) {
+                if (window.innerWidth >= 768) {
+                    e.preventDefault();
+                    const destino = $(this).attr('href');
+                    const offsetSubtraido = $(destino).offset().top - 120;
+                    $('html').animate({
+                        scrollTop: offsetSubtraido
+                    }, 800);
+                } else {
+                    e.preventDefault();
+                    const destino = $(this).attr('href');
+                    const offsetSubtraido = $(destino).offset().top - 100;
+                    $('html').animate({
+                        scrollTop: offsetSubtraido
+                    }, 800);
+                    $('nav').slideToggle();
+                }
+            });
+            $('.menu-hamburguer').click(function () {
+                $('nav').slideToggle();
+            })
+        })
+    </script>
+</body>
+
+</html>
