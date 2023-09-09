@@ -208,7 +208,7 @@ footer {
     }
 
     #sobre {
-        margin-bottom: 20%;
+        margin-bottom: 40%;
     }
 
     #sobre-text {
@@ -251,5 +251,19 @@ footer {
     nav ul li a {
         font-size: 24px;
         width: 100%;
+    }
+}
+
+@media screen and (max-height:568px) {
+    #sobre {
+        margin-bottom: 80vh;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
     }
 }
