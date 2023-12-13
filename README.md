@@ -1,4 +1,4 @@
-<h1 align="center">Projeto Biblioteca Popular</h1>
+<h1 align="center">Projeto Jambo Confeitaria</h1>
 
 <div align="center">
 
